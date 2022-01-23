@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Baloo+Bhaijaan+2&family=Comfortaa&family=Concert+One&family=Dosis:wght@300&family=Genos:wght@300&family=Lato&family=Montserrat:wght@300&family=Open+Sans+Condensed:wght@300&family=Pacifico&family=Patrick+Hand&family=Permanent+Marker&family=Special+Elite&family=Titillium+Web:wght@200&family=Ubuntu+Condensed&family=Voltaire&display=swap');
+
+
+/* scrollbar properties */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+body{
+    width:100vw;
+    height:100vh;
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+h1{
+    margin:0;
+    width:100vw;
+    height:10%;
+    font-size:2rem;
+    padding:1rem 0;
+    background-color:rgba(0, 0, 0, 0.99);
+    color:turquoise;
+    word-spacing: 0.2rem;
+    text-align: center;
+    opacity:0.9;
+    
+    font-family: 'Patrick Hand', cursive;
+}
+
+.span1{
+    font-weight: bolder;
+
+    color:tomato;
+    font-family: 'Comfortaa', cursive;
+}
+
+.span2{
+    font-weight: bolder;
+
+    color:turquoise;
+    font-family: 'Titillium Web', sans-serif;
+    
+}
+
+.container{
+    width:100vw;
+    height: 90%;
+    /* display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column; */
+    /* overflow-y:scroll; */
+    position:relative;
+    top:0;
+
+}
+
+.searchbar{
+    /*  */
+    display:inline;
+    width:60rem;
+    margin-left: 5rem;
+    gap:0.5rem;
+}
+
+input[type="text"]{
+
+    background-color: rgba(15, 15, 15,1);
+    color:white;
+    width:40rem;
+    height:2rem;
+    padding-left:0.5rem;
+    opacity:0.86;
+    outline:0;
+    border-radius: 0.3rem;
+    font-size:1rem;
+    font-weight:bolder;
+    font-family: 'Titillium Web', sans-serif;
+    margin-left:20%;
+    margin:3%;
+}
+
+button{
+    width:10rem;
+    height:2.5rem;
+    font-family: 'Titillium Web', sans-serif;
+    font-size:1rem;
+    font-weight:bolder;
+    color:white;
+    background-color:rgb(58, 12, 70);
+    border:0;
+    opacity:0.8;
+    border-radius:0.3rem;
+}
+
+.table_ctn{
+    width:80%;
+    flex:4;
+}
+
+
+
+table{
+    margin-left:10%;
+
+    width:99%;
+    height:80vh;
+
+    
+
+    /* border-collapse:collapse; */
+}
+
+th{
+      
+    padding:1rem;
+    width:5%;
+    height:3rem;
+    background-color:rgba(7, 7, 7,0.9);
+    color:seagreen;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.2rem;
+
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+}
+td{
+    border:0.5rem solid rgba(26, 25, 25,0.01);
+    border-bottom:0.1rem solid black;
+    padding:2rem;
+    width:25%;
+    background-color:rgb(221, 214, 214);
+    font-family: 'Comfortaa', cursive;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.hidden{
+    display:none;
+}

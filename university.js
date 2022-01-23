@@ -6,6 +6,7 @@ const inp=document.getElementById("inp");
 let country_name;
 let lname;
 let fname;
+let f;
 
 
 button.addEventListener("click", ()=>{
@@ -28,7 +29,13 @@ button.addEventListener("click", ()=>{
 
      //THis country name is got from the text field in search bar
 
-    let f=fetch(`http://universities.hipolabs.com/search?country=${fname}+${lname}`);
+    if(country_name.split(" ").length==1){
+        f=fetch(`http://universities.hipolabs.com/search?country=${country_name}`);
+    }
+     else{
+        f=fetch(`http://universities.hipolabs.com/search?country=${fname}+${lname}`);
+
+     }
 
 
     f.then((response)=>{
